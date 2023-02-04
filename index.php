@@ -10,7 +10,7 @@ error_reporting(E_ALL);
 
 include "Layout/header.php";
 include "<Models/movie.php";
-include "db.php";
+include "db.php";     
 
 foreach ($movies as $movie) {
     echo "<h2>" . $movie->title . "</h2>";
