@@ -30,27 +30,8 @@ error_reporting(E_ALL);
 </head>
 
 <body>
-    <h1>Movie List</h1>
-    <div class="card" style="width: 18rem;">
-        <img src="<? echo $movie->images; ?>" class="card-img-top" alt="<? echo $movie->title; ?>">
-        <div class="card-body">
-            
-            <h2 class="card-title">Titolo del film</h2>
-            <p class="card-text">Informazioni sul film come regista e generi</p>
-
-
-            <? foreach ($movies as $movie) {
-                echo '<div class="card" style="width: 18rem;">';
-                echo '  <img src="" class="card-img-top" alt="">';
-                echo '  <div class="card-body">';
-                echo '    <h5 class="card-title">' . $movie->title . '</h5>';
-                echo '    <p class="card-text">' . $movie->displayInfo() . '</p>';
-                echo '  </div>';
-                echo '</div>';
-                echo '<br>';
-            } ?>
-        </div>
-    </div>
+    <h1 class="text-center">Movie List</h1>
+    <!-- quello che dovrebbe essere qui dentro in realtà lo trovi nel file (index.php)-->
 </body>
 
 </html>

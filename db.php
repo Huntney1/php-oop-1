@@ -6,3 +6,4 @@
     new Movie("Inception", "Christopher Nolan", 'https://th.bing.com/th/id/OIP.8sbwEkVP1zn8RQ2Pn_aDyQAAAA?pid=ImgDet&rs=1', ["Action", "Sci-Fi", "Thriller"]),
     new Movie("The Shawshank Redemption", "Frank Darabont", 'https://th.bing.com/th/id/OIP.teO6YgSA-VK17ANWO8zVQAHaEK?pid=ImgDet&rs=12', ["Drama"]),
   ];
+?>

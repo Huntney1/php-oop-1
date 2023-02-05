@@ -9,7 +9,7 @@ class Movie{
     public $title;
     public $director;
     public $images;
-    public $generes;
+    public $generes=[];
 
     public function __construct($title, $director, $images, $generes) {
         $this->title = $title;
@@ -18,12 +18,12 @@ class Movie{
         $this->generes = $generes;
     }
 
-    public function displayInfo() {
+   /*  public function displayInfo() {
         echo "Title: " . $this->title . "<br>";
         echo "Director: " . $this->director . "<br>";
-        echo "images" . $this->images . "<br>";
+        echo "Images: " . $this->images . "<br>";
         echo "Generes: " . implode(", ",$this->generes) . "<br>";
-    }
+    } */
 
 }
 
