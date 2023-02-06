@@ -6,11 +6,13 @@ error_reporting(E_ALL);
 
 
 class Movie{
+    /* Variabili/Proprietà/Attributi D'istanza */
     public $title;
     public $director;
     public $images;
     public $generes=[];
 
+    /* Costruttore */
     public function __construct($title, $director, $images, $generes) {
         $this->title = $title;
         $this->director = $director;

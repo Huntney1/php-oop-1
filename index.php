@@ -41,40 +41,25 @@ include "db.php";
 
 <body>
 
-<div class="d-flex flex-wrap justify-content-around">
+  <div class="d-flex flex-wrap justify-content-around">
 
-  <!-- Loop attraverso i film -->
-  <?php foreach ($movies as $movie) : ?>
-
-    <!-- <div class="row row-cols-1 row-cols-md-2 g-4">
-      <div class="col">
-        <div class="card">
-          <img src="<?= $movie->images ?>" class="card-img-top" alt="locandina">
-          <div class="card-body">
-            <h5 class="card-title"><?= $movie->title ?></h5>
-            <p class="card-text">Director: <?= $movie->director ?></p>
-            <p class="card-text">Generes: <?= implode(", ", $movie->generes) ?></p>
+    <!-- Loop attraverso i film -->
+    <?php foreach ($movies as $movie) : ?>
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="<?= $movie->images ?>" class="img-fluid rounded-start" alt="locandina">
           </div>
-        </div>
-      </div> -->
-
-    <div class="card mb-3" style="max-width: 540px;">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="<?= $movie->images ?>" class="img-fluid rounded-start" alt="locandina">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title"><?= $movie->title ?></h5>
-            <p class="card-text">Director: <?= $movie->director ?></p>
-            <p class="card-text">Generes: <?= implode(", ", $movie->generes) ?></p>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title"><?= $movie->title ?></h5>
+              <p class="card-text">Director: <?= $movie->director ?></p>
+              <p class="card-text">Generes: <?= implode(", ", $movie->generes) ?></p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-
-  <?php endforeach; ?>
+    <?php endforeach; ?>
   </div>
 </body>
 
