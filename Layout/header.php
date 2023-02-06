@@ -30,7 +30,7 @@ error_reporting(E_ALL);
 </head>
 
 <body>
-    <h1 class="text-center">Movie List</h1>
+    <h1 class="text-center" style="color: wheat;" >Movie List</h1>
     <!-- quello che dovrebbe essere qui dentro in realtà lo trovi nel file (index.php)-->
 </body>
 

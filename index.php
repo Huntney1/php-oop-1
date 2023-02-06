@@ -39,13 +39,13 @@ include "db.php";
 
 </head>
 
-<body>
+<body style="background-color: #13005A;" >
 
   <div class="d-flex flex-wrap justify-content-around">
 
     <!-- Loop attraverso i film -->
     <?php foreach ($movies as $movie) : ?>
-      <div class="card mb-12" style="max-width: 540px;">
+      <div class="card mb-3 mt-2" style="max-width: 540px;">
         <div class="row g-0">
           <div class="col-md-4">
             <!-- ?= (= abbreviazione che comprende php ed echo) -->
