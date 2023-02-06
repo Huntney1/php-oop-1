@@ -45,9 +45,10 @@ include "db.php";
 
     <!-- Loop attraverso i film -->
     <?php foreach ($movies as $movie) : ?>
-      <div class="card mb-3" style="max-width: 540px;">
+      <div class="card mb-12" style="max-width: 540px;">
         <div class="row g-0">
           <div class="col-md-4">
+            <!-- ?= (= abbreviazione che comprende php ed echo) -->
             <img src="<?= $movie->images ?>" class="img-fluid rounded-start" alt="locandina">
           </div>
           <div class="col-md-8">
